@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Chiwanka Randila | Trading Classes in Sri Lanka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d1b2a; --navy-2:#13263b; --mint:#2fd39b; --mint-dark:#1fae7d; --ink:#e7eef6; --muted:#97a8bb; --line:#22354b; --wa:#25d366}
+  *{box-sizing:border-box}
+  html,body{margin:0;overflow-x:clip}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--navy);color:var(--ink);font-size:16px;line-height:1.6}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:'Sora',system-ui,sans-serif;font-weight:700;margin:0;line-height:1.2}
+  .wrap{width:min(1100px,92vw);margin:0 auto}
+  .kick{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mint)}
+  .btn{display:inline-block;padding:.85rem 1.5rem;border-radius:10px;font-weight:600;font-size:.92rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+  .btn-mint{background:var(--mint);color:var(--navy)}
+  .btn-mint:hover{background:var(--mint-dark);color:#fff}
+  .btn-line{border:1px solid var(--line);color:var(--ink);background:transparent}
+  .btn-wa{background:var(--wa);color:#fff;width:100%;text-align:center}
+
+  .demo-banner{background:#07111c;color:#9fd9c2;font-size:.78rem;text-align:center;padding:.5rem 1rem}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(13,27,42,.96);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem}
+  .logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem;text-decoration:none;letter-spacing:.02em}
+  .logo span{color:var(--mint)}
+  nav{display:flex;gap:1.5rem}
+  nav a{text-decoration:none;font-size:.9rem;color:var(--muted)}
+  nav a:hover{color:var(--ink)}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:.45rem .8rem;border-radius:8px;font-family:inherit;cursor:pointer}
+
+  /* hero */
+  .hero{padding:6rem 0 5rem;background:radial-gradient(70% 80% at 80% 0%,rgba(47,211,155,.18),transparent 60%),var(--navy)}
+  .hero.has-img{background-image:linear-gradient(120deg,rgba(13,27,42,.95),rgba(13,27,42,.75)),var(--hero-img);background-size:cover;background-position:center}
+  .hero h1{font-size:clamp(2.4rem,5.4vw,4rem);max-width:760px;margin:.6rem 0 1rem}
+  .hero h1 span{color:var(--mint)}
+  .hero p{max-width:560px;color:var(--muted);font-size:1.05rem;margin:0 0 2rem}
+  .hero .btns{display:flex;gap:.8rem;flex-wrap:wrap}
+  .notice{margin-top:2.4rem;display:inline-block;font-size:.84rem;color:#c9d6e3;border:1px solid var(--line);border-radius:10px;padding:.7rem 1rem;max-width:560px}
+
+  section{padding:5rem 0}
+  .head{margin-bottom:2.6rem;max-width:620px}
+  .head h2{font-size:clamp(1.9rem,3.8vw,2.6rem);margin:.5rem 0 .6rem}
+  .head p{margin:0;color:var(--muted)}
+
+  /* courses */
+  .courses{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .course{background:var(--navy-2);border:1px solid var(--line);border-radius:16px;padding:1.8rem;display:flex;flex-direction:column}
+  .course h3{font-size:1.25rem;margin:.4rem 0 .5rem}
+  .course p{margin:0 0 1.2rem;color:var(--muted);font-size:.92rem;flex:1}
+  .course .meta{font-size:.8rem;color:var(--mint);margin-bottom:1rem}
+  .course .ask{background:none;border:0;color:var(--mint);font-weight:600;cursor:pointer;padding:0;font-family:inherit;font-size:.92rem;text-align:left;border-bottom:1px solid var(--mint);align-self:flex-start}
+
+  /* instructor */
+  .inst{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center}
+  .inst .photo{aspect-ratio:1/1;border-radius:18px;background:linear-gradient(160deg,#1d3a55,#0a1622);position:relative;overflow:hidden;border:1px solid var(--line)}
+  .inst .photo.has-img{background-size:cover;background-position:center}
+  .inst .photo span{position:absolute;left:12px;bottom:12px;font-size:.72rem;background:rgba(0,0,0,.6);padding:.2rem .6rem;border-radius:6px}
+  .inst .photo.has-img span{display:none}
+  .inst ul{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;gap:.6rem;color:#c9d6e3}
+  .inst li::before{content:"\2713  ";color:var(--mint);font-weight:700}
+
+  /* schedule */
+  .sched{background:var(--navy-2);border:1px solid var(--line);border-radius:16px;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;min-width:560px}
+  th,td{padding:.9rem 1rem;text-align:left;border-bottom:1px solid var(--line);font-size:.93rem}
+  th{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);font-weight:600}
+
+  /* enrol */
+  .enrol{background:var(--navy-2)}
+  .enrol-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .form{background:var(--navy);border:1px solid var(--line);border-radius:16px;padding:2rem}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+  .field label{font-size:.78rem;font-weight:600;color:var(--muted)}
+  .field input,.field select,.field textarea{font:inherit;color:var(--ink);background:#0a1624;border:1px solid var(--line);border-radius:8px;padding:.7rem .8rem;width:100%}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--mint);outline-offset:1px}
+  .field option{color:#000}
+  .sent{display:none;margin-top:.9rem;text-align:center;font-size:.9rem;color:var(--muted)}
+  .sent.show{display:block}
+  .sent a{color:var(--mint);font-weight:600}
+
+  /* disclaimer */
+  .risk{background:#0a1624;border-top:1px solid var(--line)}
+  .risk h3{font-size:1.2rem;margin-bottom:.6rem;color:#f3c969}
+  .risk p{margin:0 0 .6rem;color:var(--muted);font-size:.9rem}
+
+  footer{background:#07111c;color:#7f91a6;padding:2.2rem 0;font-size:.85rem;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+  footer a{color:var(--ink);text-decoration:none}
+
+  .float-wa{position:fixed;right:16px;bottom:16px;z-index:19;background:var(--wa);color:#fff;text-decoration:none;padding:.8rem 1.1rem;border-radius:999px;font-weight:600;font-size:.88rem;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+
+  @media (max-width:900px){
+    .courses{grid-template-columns:1fr}
+    .inst,.enrol-grid{grid-template-columns:1fr}
+    nav{display:none}
+    nav.open{display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:var(--navy);padding:1rem 4vw 1.4rem;gap:.9rem;border-bottom:1px solid var(--line)}
+    .menu-btn{display:block}
+  }
+  @media (max-width:600px){
+    .row{grid-template-columns:1fr}
+    section{padding:3.8rem 0}
+    .hero{padding:4.2rem 0 3.6rem}
+    .form{padding:1.3rem}
+    .float-wa{font-size:.8rem;padding:.7rem .9rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">DEMO by Code.lowa. Sample course names and placeholder details. Remove this bar after approval.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Chiwanka <span>Randila</span></a>
+    <nav id="nav">
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#enrol">Enrol</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero" id="hero" data-img="hero.jpg">
+    <div class="wrap">
+      <div class="kick">Trading education &middot; Sri Lanka</div>
+      <h1>Learn to trade with <span>a clear, step-by-step plan.</span></h1>
+      <p>Live and recorded classes that teach market basics, risk management and how to build your own trading routine. Learn the skills first, practise carefully, and decide for yourself.</p>
+      <div class="btns">
+        <a class="btn btn-mint" href="#enrol">Enrol now</a>
+        <a class="btn btn-line" href="#courses">See courses</a>
+      </div>
+      <div class="notice">Trading carries risk, and you can lose money. Nothing on this page is financial advice or a promise of profit.</div>
+    </div>
+  </div>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="wrap">
+      <div class="head">
+        <div class="kick">Courses</div>
+        <h2>Pick a course that fits you</h2>
+        <p>Replace these with your real course names, outlines, and fees.</p>
+      </div>
+      <div class="courses">
+        <div class="course"><div class="meta">Beginner &middot; Duration: add</div><h3>Trading Basics</h3><p>How markets work, reading charts, and the vocabulary you need before you place a trade.</p><button class="ask" type="button" data-course="Trading Basics">Ask about this course</button></div>
+        <div class="course"><div class="meta">Intermediate &middot; Duration: add</div><h3>Risk Management</h3><p>Position sizing, stop-losses and keeping losses small. The skill most traders learn last.</p><button class="ask" type="button" data-course="Risk Management">Ask about this course</button></div>
+        <div class="course"><div class="meta">All levels &middot; Duration: add</div><h3>Live Market Sessions</h3><p>Weekly live sessions where we walk through real market examples together.</p><button class="ask" type="button" data-course="Live Market Sessions">Ask about this course</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="background:var(--navy-2)">
+    <div class="wrap inst">
+      <div class="photo" data-img="chiwanka.jpg"><span>chiwanka.jpg</span></div>
+      <div>
+        <div class="kick">About the teacher</div>
+        <h2 style="margin:.5rem 0 .8rem;font-size:clamp(1.9rem,3.8vw,2.6rem)">Chiwanka Randila</h2>
+        <p style="color:var(--muted);margin:0">Add a short, factual bio here: teaching background, years of experience, and any formal qualifications he holds. Don't add claims that can't be checked.</p>
+        <ul>
+          <li>Add classes taught and where</li>
+          <li>Add qualifications, if any</li>
+          <li>Add how students learn (live, recorded, Q&amp;A)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <div class="wrap">
+      <div class="head">
+        <div class="kick">Schedule</div>
+        <h2>Class times</h2>
+        <p>Replace these with the real timetable.</p>
+      </div>
+      <div class="sched">
+        <table>
+          <thead><tr><th>Time</th><th>Monday</th><th>Wednesday</th><th>Friday</th><th>Saturday</th></tr></thead>
+          <tbody>
+            <tr><td>7:00 PM</td><td>Trading Basics</td><td>Risk Management</td><td>Trading Basics</td><td>Live session</td></tr>
+            <tr><td>8:30 PM</td><td>Q&amp;A</td><td>Q&amp;A</td><td>Q&amp;A</td><td>Q&amp;A</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENROL -->
+  <section class="enrol" id="enrol">
+    <div class="wrap enrol-grid">
+      <div>
+        <div class="kick">Enrol</div>
+        <h2 style="font-size:clamp(1.9rem,3.8vw,2.6rem);margin:.5rem 0 .8rem">Send your enquiry</h2>
+        <p style="color:var(--muted);margin:0">Tell us which course you want. We reply on WhatsApp with the fees, the next start date and the payment options.</p>
+      </div>
+      <form class="form" id="enrolForm">
+        <div class="row">
+          <div class="field"><label for="name">Your name</label><input id="name" placeholder="Full name" required></div>
+          <div class="field"><label for="course">Course</label>
+            <select id="course"><option>Trading Basics</option><option>Risk Management</option><option>Live Market Sessions</option><option>Not sure yet</option></select></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="level">Experience</label>
+            <select id="level"><option>Beginner</option><option>Some experience</option><option>Experienced</option></select></div>
+          <div class="field"><label for="format">Format</label>
+            <select id="format"><option>Live</option><option>Recorded</option><option>Either</option></select></div>
+        </div>
+        <div class="field"><label for="note">Questions (optional)</label><textarea id="note" rows="3" placeholder="Anything you'd like to ask before enrolling"></textarea></div>
+        <button class="btn btn-wa" type="submit">Send enquiry on WhatsApp</button>
+        <div class="sent" id="sent">Tap to send: <a id="waLink" target="_blank" rel="noopener">Open WhatsApp</a></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- RISK -->
+  <section class="risk">
+    <div class="wrap">
+      <h3>Important risk notice</h3>
+      <p>Trading involves a real risk of losing money. Past performance does not guarantee future results. The classes are for education only and do not provide personal financial advice.</p>
+      <p>Before investing, consider your own financial situation and seek independent advice where needed.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; Chiwanka Randila &middot; Trading education, Sri Lanka</div>
+    <div><a href="tel:+94774629003">077 462 9003</a></div>
+  </div>
+</footer>
+
+<a class="float-wa" id="floatWa" href="https://wa.me/94774629003" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+/* ---- Photo slots ---- */
+(function(){
+  var hero = document.getElementById('hero');
+  var hp = new Image();
+  hp.onload = function(){ hero.style.setProperty('--hero-img','url("img/hero.jpg")'); hero.classList.add('has-img'); };
+  hp.src = 'img/hero.jpg';
+})();
+document.querySelectorAll('.photo[data-img]').forEach(function(el){
+  var src = 'img/' + el.getAttribute('data-img');
+  var p = new Image();
+  p.onload = function(){ el.style.backgroundImage = 'url("'+src+'")'; el.classList.add('has-img'); };
+  p.src = src;
+});
+
+/* ---- WhatsApp link builder ---- */
+var WA = '94774629003';
+function setLink(text){
+  var url = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(text);
+  document.getElementById('waLink').href = url;
+  document.getElementById('sent').classList.add('show');
+  document.getElementById('floatWa').href = url;
+  return url;
+}
+
+/* ---- "Ask about this course" buttons ---- */
+document.querySelectorAll('.ask').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var c = btn.getAttribute('data-course');
+    setLink('Hi Chiwanka, I would like to know more about the ' + c + ' course. Please share the fees and the next start date.');
+    document.getElementById('enrol').scrollIntoView({behavior:'smooth'});
+  });
+});
+
+/* ---- Enrolment form ---- */
+document.getElementById('enrolForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var text = 'Hi Chiwanka, I am ' + document.getElementById('name').value.trim() +
+    '.\nCourse: ' + document.getElementById('course').value +
+    '\nExperience: ' + document.getElementById('level').value +
+    '\nFormat: ' + document.getElementById('format').value +
+    '\nQuestion: ' + (document.getElementById('note').value.trim() || '-');
+  setLink(text);
+});
+
+/* ---- Mobile menu ---- */
+document.getElementById('menuBtn').addEventListener('click', function(){
+  document.getElementById('nav').classList.toggle('open');
+});
+</script>
+</body>
+</html>
